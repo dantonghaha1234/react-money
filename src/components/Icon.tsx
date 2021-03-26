@@ -5,6 +5,7 @@ import React from 'react';
 // require('icons/money.svg');
 // require('icons/tag.svg');
 // require('icons/chart.svg');
+//yarn add @types/webpack-env 能解决下面 __WebpackModuleApi报错的问题
 let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {importAll(require.context('icons', true, /\.svg$/));} catch (error) {console.log(error);}
 type Props = {
